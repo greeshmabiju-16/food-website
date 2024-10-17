@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+
+    <!-- style -->
+     <link rel="stylesheet" href="./style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/9617/9617325.png">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Kalnia+Glaze:wght@100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Kalnia+Glaze:wght@100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+
+    <!-- .boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<!-- HOME SECTION -->
+    <!-- navbar -->
+    <header>
+        <nav class="navbar   navbar-expand-lg bg-danger custom-navbar" >
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="#products" style="font-size: 50px;     color: white;
+">
+                    <i class="fa-solid fa-burger fa-beat-fade fa-xl" style="color: #ffff;"></i> TasteBites
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; font-size: 20px;">
+                              Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#starters" style="color: white; background-color: rgb(255, 49, 49);">Starters</a></li>
+                              <li><a class="dropdown-item" href="#maincourse" style="color: white; background-color: rgb(255, 49, 49);">Main Course</a></li>
+                              <li><a class="dropdown-item" href="#desserts" style="color: white; background-color: rgb(255, 49, 49);">Desserts</a></li>
+
+                              <li><a class="dropdown-item" href="#beverages" style="color: white; background-color: rgb(255, 49, 49);">Beverages</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" style="color: white; font-size: 20px;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" style="color: white; font-size: 20px;">Contact</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-light">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+        </nav>    
+    </header>
+
+    <!-- carousel -->
+     <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." height="680px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TasteBites</h5>
+                  <p>Food is an essential aspect of human life, providing nourishment and energy to sustain our daily activities. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." height="680px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TasteBites</h5>
+                  <p> Food encompasses a diverse range of flavors, ingredients, and culinary traditions that vary across different cultures and regions</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." height="680px">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TasteBites</h5>
+                  <p> Food often plays a central role in social gatherings, celebrations, and rituals, fostering connections and shared experiences among people.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     </section>
+<br>
+
+     <!-- featured products -->
+     
+      <section id="products">
+        <h1>Popular Dishes</h1><br>
+       <div class="row">
+        <div class="col"> <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/authentic-italian-pasta_24972-2334.jpg?size=626&ext=jpg&ga=GA1.1.768656951.1722887297&semt=sph" class="card-img-top" alt="..." >
+            <div class="card-body">
+              <h5 class="card-title">Pasta</h5>
+              <p class="card-text">Pasta is a versatile and beloved Italian dish made from durum wheat and water, often served with a variety of sauces and ingredients.</p>
+
+                
+            </div>
+          </div>
+        </div>
+
+        <div class="col"> <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/view-delicious-burger-with-buns-cheese_23-2150887834.jpg?size=626&ext=jpg&ga=GA1.1.768656951.1722887297&semt=ais_hybrid" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Burger</h5>
+              <p class="card-text">Burger is a popular sandwich consisting of a cooked patty, typically beef, placed inside a sliced bun and often accompanied by various toppings and condiments.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col" > <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/photo-traditional-indian-food-dish-celebrate-diwali_125540-3656.jpg?size=626&ext=jpg&ga=GA1.1.768656951.1722887297&semt=ais_hybrid" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">South Indian Meals</h5>
+              <p class="card-text">South Indian meals are traditional, flavorful dishes typically served on a banana leaf, featuring rice, sambar, rasam, a variety of vegetable curries, chutneys, and papad.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col"> <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/close-up-appetizing-ramadan-meal_23-2151182540.jpg?size=626&ext=jpg&ga=GA1.1.768656951.1722887297&semt=ais_hybrid" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chiken Biriyani</h5>
+              <p class="card-text">Chicken biryani is a fragrant and flavorful Indian dish made with layers of spiced basmati rice, marinated chicken, and aromatic herbs, often garnished with fried onions and fresh coriander.</p>
+              
+            </div>
+          </div>
+        </div>
+       </div>
+<br><br>
+       <!-- next row -->
+       <div class="row">
+        <div class="col"> <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food_1150-26584.jpg?t=st=1722889052~exp=1722892652~hmac=56c1ce34a998bf875a7a356f67a3a074f9ecba2fc96d373779baf0925b314b43&w=1060" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fried Rice</h5>
+              <p class="card-text">Fried rice is a popular dish made by stir-frying cooked rice with vegetables, eggs, and often meat or seafood, seasoned with soy sauce and other spices for a savory and aromatic flavor..</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col"> <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/top-view-yummy-ham-sandwich-inside-dark-plate-with-french-fries-ketchup-dark-surface_179666-35672.jpg?t=st=1722889113~exp=1722892713~hmac=b758bd12047bc46bff5416a0233f87acce2f459572d57a133f0da01bfecf2e7b&w=1060" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sandwich</h5>
+              <p class="card-text">A sandwich is a versatile dish consisting of two slices of bread with a filling such as meat, cheese, vegetables, and condiments, making it a convenient and popular meal option.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col" > <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/chocolate-cake-decorated-with-forest-fruits-blueberries-strawberries-blackberries-ai-generative_123827-24046.jpg?t=st=1722889167~exp=1722892767~hmac=797fcb7b760fc89619715ed0b6c866d2f6117481933b50821f8216053f859a37&w=1060" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cakes</h5>
+              <p class="card-text">Cakes are sweet baked goods typically made from flour, sugar, eggs, and butter, often decorated with icing or frosting, and enjoyed as a dessert or for special occasions.</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col"> <div class="card" style="width: 18rem;">
+            <img src="https://img.freepik.com/free-photo/flat-lay-salad-with-chicken-sesame-seeds_23-2148700369.jpg?t=st=1722889295~exp=1722892895~hmac=a5d4fbe4aa8abe2d959fb3b5cc319362a91f48ea183500f6e1f30d8a78824301&w=1060" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Salads</h5>
+              <p class="card-text">Salads are fresh, often cold dishes made from a variety of vegetables, fruits, and proteins, typically tossed with a dressing to enhance flavor and provide a light, nutritious meal option.</p>
+              
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
+<br><br>
+      <!-- MENU SECTION -->
+
+     <section>
+        <!-- starters -->
+       <section id="starters">
+        <h1>Starters</h1>
+        <br><br>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                <img src="https://img.freepik.com/free-photo/kegs-pancakes-with-red-fish_2829-13914.jpg?t=st=1722892572~exp=1722896172~hmac=4947e934b8bf5f6d963f6a42c7b8f3fb4d58c1d7d5ad2a81aa1fc7588222da60&w=1060" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Spring Rolls</h4>
+                  <p class="card-text">Crispy rolls filled with vegetables or meat, often served with a dipping sauce.</p>
+                  <p><b style="font-size: 25px;">₹20 </b><br><br>
+
+                  <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col"><div class="card" style="width: 18rem;">
+                <img src="https://img.freepik.com/free-photo/bruschetta-chopping-board_144627-17674.jpg?t=st=1722892655~exp=1722896255~hmac=3edbc2e71951aa9671db83fe85bb7054ba193672bb1affb287981084143df732&w=1060" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Bruschetta</h4>
+                  <p class="card-text">Toasted bread topped with a mixture of tomatoes, garlic, basil, and olive oil.</p>
+                  <p><b style="font-size: 25px;">₹50 </b><br><br>
+
+                    <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+                </div>
+              </div></div>
+            <div class="col"><div class="card" style="width: 18rem;">
+                <img src="https://img.freepik.com/free-photo/crispy-fried-chicken-plate-with-salad-carrot_1150-20212.jpg?t=st=1722892906~exp=1722896506~hmac=78ea7c85f95f9267d0cad5f154116269f5b70afc1b8c8de919d1c218a37147fd&w=1060" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Chicken Wings</h4>
+                  <p class="card-text">Spicy or tangy wings, usually served with a side of dipping sauce.</p>
+                  <p><b style="font-size: 25px;">₹80 </b><br><br>
+
+                    <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+                </div>
+              </div></div>
+            <div class="col"><div class="card" style="width: 18rem;">
+                <img src="https://img.freepik.com/free-photo/homemade-baked-stuffed-champignon-mushrooms-with-fresh-dill-cheese_114579-8219.jpg?t=st=1722892755~exp=1722896355~hmac=5e4d187e856bbb8a57ab54fc11c8487e86a2d4a0d35eb83aeb70f2b886228d2b&w=1060" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title">Stuffed Mushrooms</h4>
+                  <p class="card-text">Mushrooms filled with a savory mixture of cheese, herbs, and breadcrumbs.</p>
+                  <p><b style="font-size: 25px;">₹50 </b><br><br>
+
+                    <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+                </div>
+              </div></div>
+        </div>
+
+
+          <!-- next row -->
+          <br><br>
+          <div class="row">
+              <div class="col">
+                  <div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/diner-platter-with-olives-cheese-vegetables_2829-11264.jpg?t=st=1722893905~exp=1722897505~hmac=0293c7605f21c8cd434748821597f035370b2cb50609c7372fcc949b5044327a&w=1060" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Cheese Platter</h4>
+                    <p class="card-text">An assortment of cheeses served with crackers, fruits, and nuts.</p>
+                    <p><b style="font-size: 25px;">₹100 </b><br><br>
+  
+                    <a href="#" class="btn btn-danger" > <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/mexican-nacho-chips-salsa-dip-bowl-wooden_2829-11158.jpg?t=st=1722894383~exp=1722897983~hmac=9096c9cbd9b6ad5669b157c5ac76f0e17ba95d8da50ecf99635bf3be888cb951&w=1060" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Nachos </h4>
+                    <p class="card-text">Tortilla chips topped with melted cheese, jalapeños, and often served with salsa .</p>
+                    <p><b style="font-size: 25px;">₹80 </b><br><br>
+  
+                      <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+  
+                  </div>
+                </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/plate-fresh-organic-vegetables-salad-with-hummus-dark-brown-concrete-surface_114579-5479.jpg?t=st=1722894109~exp=1722897709~hmac=cb02f30f3bd36518014545a710d0a4aa04238d8ae8ac50a04f661d10733f6786&w=1060" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Hummus with Veggies</h4>
+                    <p class="card-text">A creamy chickpea dip served with warm pita bread or vegetable sticks.</p>
+                    <p><b style="font-size: 25px;">₹120 </b><br><br>
+  
+                      <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+  
+                  </div>
+                </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/homemade-tasty-bread-with-garlic-cheese-herbs-kitchen-table_1150-47126.jpg?t=st=1722894223~exp=1722897823~hmac=a23a41b93151fcff38c25d6fd6783c7a7924cb73224f3de7ad6bec69075e4a9a&w=1060" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Garlic Bread</h4>
+                    <p class="card-text"> Slices of bread toasted with garlic butter and sometimes sprinkled with herbs.</p>
+                    <p><b style="font-size: 25px;">₹80 </b><br><br>
+  
+                      <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+  
+                  </div>
+                </div></div>
+          </div>
+  
+       </section><br><br>
+
+<!-- main course -->
+<section id="maincourse">
+  <h1>Main Course</h1>
+  <br><br>
+  <div class="row">
+      <div class="col">
+          <div class="card" style="width: 18rem;">
+          <img src="https://img.freepik.com/free-photo/spaghetti-with-cream-sauce_1339-3072.jpg?t=st=1722960379~exp=1722963979~hmac=76e1cc8aef861546c7e1f191ad9eecc85b8d0b636b4d268144590f08b05a170d&w=1060" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Spaghetti Carbonara</h4>
+            <p class="card-text">Carbonara is a pasta dish made with fatty cured pork, hard cheese, eggs, salt, and black pepper</p>
+            <p><b style="font-size: 25px;">₹250 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col"><div class="card" style="width: 18rem;">
+          <img src="https://img.freepik.com/free-photo/ong-chili-black-board_1150-24463.jpg?t=st=1722960480~exp=1722964080~hmac=27fb941339d62d9e48ea6911f6fdcb2938dc69a769891592c56cd9dd0dea731b&w=1060" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Chicken Tikka Masala</h4>
+            <p class="card-text">A popular Indian dish consisting of roasted marinated chicken chunks in spiced curry sauce.</p>
+            <p><b style="font-size: 25px;">₹150 </b><br><br>
+
+              <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+          </div>
+        </div></div>
+      <div class="col"><div class="card" style="width: 18rem;">
+          <img src="https://img.freepik.com/free-photo/delicious-goulash-ready-dinner_23-2149370833.jpg?t=st=1722960574~exp=1722964174~hmac=5284b44056f414783f504ac3ee7cc8e5a7510117b99dcdca7d5eb7366ff95dec&w=1060" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Beef Stroganoff</h4>
+            <p class="card-text">A Russian dish made with sautéed pieces of beef served in a sauce with smetana (sour cream).</p>
+            <p><b style="font-size: 25px;">₹150 </b><br><br>
+
+              <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+          </div>
+        </div></div>
+      <div class="col"><div class="card" style="width: 18rem;">
+          <img src="https://img.freepik.com/free-photo/pad-thai-white-plate-with-lemon-wooden-table_1150-21199.jpg?t=st=1722960744~exp=1722964344~hmac=a45fcaeff9f41c747bbf0e98f17e684b78fb904e7cd40ac11641f41ce65a6ab4&w=1060" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Pad Thai</h4>
+            <p class="card-text">A Thai stir-fried noodle dish typically made with  a scrambled egg, and bean sprouts, among other vegetables.</p>
+            <p><b style="font-size: 25px;">₹120 </b><br><br>
+
+              <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+          </div>
+        </div></div>
+  </div>
+
+
+  
+          <!-- next row -->
+          <br><br>
+          <div class="row">
+              <div class="col">
+                  <div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/top-view-fish-chips-with-cutlery-selection-sauces_23-2148784860.jpg?t=st=1722961007~exp=1722964607~hmac=7cfec94a81f846e08ce2e5a31d4ab0d53a883d5b564f916528a405e4f68b8f07&w=1060" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Fish and Chips</h4>
+                    <p class="card-text">A classic British dish consisting of battered and fried fish served with fried potatoes.</p>
+                    <p><b style="font-size: 25px;">₹200 </b><br><br>
+  
+                    <a href="#" class="btn btn-danger" > <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/moussaka-traditional-greek-dish_2829-8400.jpg?t=st=1722961105~exp=1722964705~hmac=53d3595c6a436a6a7f6bc76980fca5626aa105abf734279ba27cc63906cac6b0&w=1060" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Moussaka </h4>
+                    <p class="card-text">A Greek dish made with layers of eggplant, minced meat, and béchamel sauce.</p>
+                    <p><b style="font-size: 25px;">₹100 </b><br><br>
+  
+                      <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+  
+                  </div>
+                </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/pasta-dish-restaurant-table_7939-2485.jpg?t=st=1722961450~exp=1722965050~hmac=effa94bad4e5140d97eb2ea863b040cdc75903f0bc19e55cb547e9ff1b41a0d8&w=1060" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Chicken Alfredo</h4>
+                    <p class="card-text">An Italian-American dish of pasta tossed in a creamy sauce made from butter with chicken.</p>
+                    <p><b style="font-size: 25px;">₹250 </b><br><br>
+  
+                      <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+  
+                  </div>
+                </div></div>
+              <div class="col"><div class="card" style="width: 18rem;">
+                  <img src="https://img.freepik.com/free-photo/flat-lay-noodles-meal-arrangement_23-2148803834.jpg?t=st=1722961638~exp=1722965238~hmac=6638388be8395c226b0db497e2f1c0f76b43480200199a83c7033bf076524c74&w=1060" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h4 class="card-title">Bibimbap</h4>
+                    <p class="card-text"> A Korean mixed rice dish topped with assorted vegetables, sliced meat, a fried egg, and chili pepper paste.</p>
+                    <p><b style="font-size: 25px;">₹150 </b><br><br>
+  
+                      <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+  
+                  </div>
+                </div></div>
+          </div>
+
+</section>
+<br><br>
+
+<!-- desserts section -->
+<section id="desserts">
+  
+<h1>Desserts</h1>
+<br><br>
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/strawberry-cheesecake-isolated-white-background_123827-29176.jpg?t=st=1722963040~exp=1722966640~hmac=f2ec83ca328a8f596b03c458996186c4e619e538b15fd158a42dd2b252a7838c&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Cheese Cake</h4>
+          <p class="card-text">A rich dessert consisting of a creamy cheese filling on a crust made from crushed cookies or graham crackers, often topped with fruit or chocolate.</p>
+          <p><b style="font-size: 25px;">₹100 </b><br><br>
+
+          <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col"><div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/tasty-homemade-tiramisu-cake_114579-37091.jpg?t=st=1722963316~exp=1722966916~hmac=4aa9350083746adfefa8c7b80363038bdb8d512926d57ab673d1646d0d3a5726&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Tiramisu</h4>
+          <p class="card-text">An Italian dessert made of layers of coffee-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder.</p>
+          <p><b style="font-size: 25px;">₹80 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+        </div>
+      </div></div>
+    <div class="col"><div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/top-view-delicious-creamy-dessert-with-fresh-strawberries-light-white-background-dessert-ice-cream-sweet-fruit-taste_140725-56038.jpg?t=st=1722963481~exp=1722967081~hmac=239cff30c981421c88abd5d998f896f8c9216baadb324c4aa26032e31a434533&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Crème Brûlée </h4>
+          <p class="card-text">A French dessert featuring a rich custard base topped with a layer of hardened caramelized sugar.</p>
+          <p><b style="font-size: 25px;">₹50 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+        </div>
+      </div></div>
+    <div class="col"><div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/high-angle-delicious-indian-dessert_23-2149312428.jpg?t=st=1722963672~exp=1722967272~hmac=b0f033ac9960e37a3a9a120e191f84787a4f996fe7a93c5cb7c3c6bdefdd6906&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Gulab Jamun</h4>
+          <p class="card-text">A popular Indian dessert made of deep-fried dough balls soaked in a sugary syrup flavored with cardamom and rose water.</p>
+          <p><b style="font-size: 25px;">₹50 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+        </div>
+      </div></div>
+</div>
+
+
+</section>
+
+
+<!-- beverages -->
+
+<section id="beverages">
+   
+<h1>Beverages</h1>
+<br><br>
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/top-view-fresh-delicious-fruit-juices-served-with-apple-feijoas-oranges-wooden-cutting-board_140725-94735.jpg?t=st=1722965344~exp=1722968944~hmac=32a0f8cf0592adf0347e378835afaa2c1423d3ca2ef7533d8ce497433596c192&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Mojito</h4>
+          <p class="card-text">A refreshing Cuban cocktail made with white rum, sugar, lime juice, soda water, and mint.</p>
+          <p><b style="font-size: 25px;">₹80 </b><br><br>
+
+          <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="col"><div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/cup-coffee-with-heart-drawn-foam_1286-70.jpg?t=st=1722966202~exp=1722969802~hmac=32d56ea0c9946bdc2791a8cfd4ca6c6d6c6153d9849856615494ba81226be133&w=996" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Chai</h4>
+          <p class="card-text">A  tea beverage originating from India, made by brewing black tea with milk.</p>
+          <p><b style="font-size: 25px;">₹30 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+        </div>
+      </div></div>
+    <div class="col"><div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/mango-juice-glass-dark-surface_1150-41957.jpg?t=st=1722965568~exp=1722969168~hmac=fee0499e150afdc6062e411591bf5df751d6d18d6544edf2c53c2ff3ccd59fda&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Mango Lassi </h4>
+          <p class="card-text">A sweet, creamy yogurt-based drink from India, blended with ripe mangoes, sugar, and a hint of cardamom</p>
+          <p><b style="font-size: 25px;">₹50 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+        </div>
+      </div></div>
+    <div class="col"><div class="card" style="width: 18rem;">
+        <img src="https://img.freepik.com/free-photo/green-matcha-tea-still-life_23-2150768986.jpg?t=st=1722965949~exp=1722969549~hmac=d48bad2c29293d44e8c9f2383b1bd8b800509cf051228be217baa6c056bab37d&w=1060" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Matcha Green Tea</h4>
+          <p class="card-text">A traditional Japanese beverage made from finely ground green tea leaves, to create a frothy, vibrant green drink.</p>
+          <p><b style="font-size: 25px;">₹50 </b><br><br>
+
+            <a href="#" class="btn btn-danger"> <i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+
+        </div>
+      </div></div>
+</div>
+
+</section>
+
+
+
+
+     </section>
+
+
+     <!-- about section -->
+
+<br><br>
+     <section id="about">
+      <center><h1>About Us</h1></center><br><br>
+<div class="tbs">
+  <div class="tbs1">
+    <p style="margin-left: 30px; margin-right: 30px; font-size: 20px;">
+      Welcome to TasteBites, where culinary excellence meets warm hospitality. Nestled in the heart of Kochi, our restaurant offers a delightful fusion of traditional flavors and contemporary cuisine. Our chefs craft each dish with the freshest ingredients, ensuring a memorable dining experience for every guest. Whether you're here for a casual meal with friends or a special celebration, we invite you to savor the rich flavors and inviting atmosphere that make TasteBites a cherished destination for food lovers. 
+      <br><br>
+      At TasteBites, we believe that great food is at the heart of every memorable experience. Located in the vibrant neighborhood of Kochi, our restaurant is a celebration of culinary traditions and modern creativity. Our menu is carefully crafted to offer a variety of dishes that cater to diverse tastes, ensuring that there’s something for everyone to enjoy. <br><br>
+    
+    Our chefs are passionate about using only the freshest, locally sourced ingredients, bringing out the best in every dish. From flavorful appetizers to delectable main courses and indulgent desserts, each item on our menu is a testament to our commitment to quality and taste. Whether you're in the mood for a comforting classic or something new and exciting, we promise a dining experience that will leave you satisfied and eager to return. <br><br>
+    
+    
+    </p>
+  </div>
+  <div class="tb1">
+    <img src="https://healthydietindia.com/wp-content/uploads/2021/06/pic2.jpg" alt="" width="300px">
+  </div>
+
+</div>
+<div class="his">
+  
+
+
+<center><h2>What Makes Us Unique</h2></center>
+"At TasteBites, we pride ourselves on offering a dining experience that is truly one of a kind. What sets us apart is our unwavering commitment to using only the highest quality, locally sourced ingredients in every dish we create. Our chefs blend time-honored cooking methods with contemporary flair, resulting in a menu that is both familiar and refreshingly innovative. In addition to our exceptional food, we are dedicated to providing a warm, welcoming environment where guests can feel at home. Whether it’s our inviting ambiance, our attentive service, or our carefully curated wine and cocktail selection, every aspect of TasteBites is designed to ensure that your visit is a memorable one."
+</div>
+<br><br>
+<center><h1>Gallery</h1></center>
+
+<div class="gal">
+  <div class="gal1">
+    <img src="https://assets.architecturaldigest.in/photos/6008265f06a309310701628b/4:3/w_1024,h_768,c_limit/mumbai-restaurant-foo-lower-parel-interior-design-1366x768.jpg" class="img-thumbnail" alt="...">
+  </div>
+
+  <div class="gal1">
+    <img src="https://imgmedia.lbb.in/media/2018/10/5bc44410e87d7f7c5fb35059_1539589136933.jpg" class="img-thumbnail" alt="...">
+  </div>
+
+  <div class="gal1">
+    <img src="https://imgmedia.lbb.in/media/2018/10/5bc4440f04edab19945122c5_1539589135216.jpg" class="img-thumbnail" alt="...">
+  </div>
+  
+  
+</div>
+
+<!-- next row -->
+<div class="gal">
+  <div class="gal1">
+    <img src="https://b.zmtcdn.com/data/pictures/5/20445105/d5a797fe28563cedfffc9117a26c97f4.jpeg?fit=around|960:500&crop=960:500;*,*" class="img-thumbnail" alt="...">
+  </div>
+
+  <div class="gal1">
+    <img src="https://media.istockphoto.com/id/2149219718/photo/3d-render-of-cafe-restaurant-interior.webp?b=1&s=170667a&w=0&k=20&c=32ULZ2au0AcQkqXQjc8dJO7dkQ0ltDBl5qjSREEzXj4=" class="img-thumbnail" alt="...">
+  </div>
+
+  <div class="gal1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR28bgBYzkRJqIM4L9FH3YnRp_acodtep2c3fdA3ZMJsUmeBTfTdFo6CvZAKIuE417hJvw&usqp=CAU" class="img-thumbnail" alt="...">
+  </div>
+  
+  
+</div>
+<br><br>
+<!-- chef -->
+<center><h1>Our Chefs</h1></center><br><br>
+<div class="row text-center">
+  <div class="col-2">
+    <img src="https://i.pinimg.com/736x/82/be/22/82be22fd558433e235a173c2257c0cbc.jpg" alt="Chef 1" class="rounded-circle img-fluid" style="max-width: 150px; height: 200px;">
+  </div>
+  <div class="col-2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYI4Y-rgl7-twnz_bI7ldA37Cidm3MKU-p0AhALKwoDga31RskbIBoQO6hz1ftusEt4s&usqp=CAU" alt="Chef 2" class="rounded-circle img-fluid" style="max-width: 150px;height: 200px;">
+  </div>
+  <div class="col-2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_3KhT1yGmRdCjXH6POqx4C3jU9vJ6qpKF9kgo2o1_frN13YEWqsWvw-HxPa2NDjwE5g&usqp=CAU" alt="Chef 3" class="rounded-circle img-fluid" style="max-width: 150px;height: 200px;">
+  </div>
+  <div class="col-2">
+    <img src="https://plus.unsplash.com/premium_photo-1661778091956-15dbe6e47442?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlZnxlbnwwfHwwfHx8MA%3D%3D" alt="Chef 4" class="rounded-circle img-fluid" style="max-width: 150px;height: 200px;">
+  </div>
+  <div class="col-2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK46B8Z6eVwuF-eT9i-LpB5of6u5bNzXgIqw&s" alt="Chef 5" class="rounded-circle img-fluid" style="max-width: 150px;height: 200px;">
+  </div>
+  <div class="col-2">
+    <img src="https://i.pinimg.com/474x/d2/35/47/d2354797cfb995122e8bf0248cb1fd76.jpg" alt="Chef 6" class="rounded-circle img-fluid" style="max-width: 150px;height: 200px;">
+  </div>
+</div>
+
+     </section>
+
+<br><br>
+     <!-- contact -->
+      <section id="contact">
+        <center><h1> Contact Us</h1></center><br><br>
+
+
+      <div class="map">
+        <div class="map1">
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.5759647517!2d76.13612123967098!3d9.982516031000996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582caa5844192!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1723130662731!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        </div>
+
+
+        <div class="map1">
+          <center><h2> Have some Query?</h2></center><br>
+          
+          <form action="" method="">
+              <label for="name">Name:</label>
+              <input type="text" id="name"   name="name" required><br><br>
+      
+              <label for="email">Email:</label>
+              <input type="email" id="email"   name="email" required><br><br>
+      
+              <label for="query">Your Query:</label>
+              <textarea id="query" name="query"   rows="1" required></textarea><br><br>
+              
+      
+              <button type="submit" >Submit</button>
+          </form>
+        </div>
+
+       
+
+
+      </div>
+
+
+
+
+
+
+      </section>
+<br><br>
+      <footer>
+        <section>
+          <div class="foot">
+            <div class="foot1">
+              <h3>Address</h3>
+              TasteBites
+1234 Culinary Street, <br>
+Gourmet District,<br>
+Foodie City, FL 56789<br>
+Phone: (123) 456-7890<br>
+Email: tastebites@gmail.com
+            </div>
+
+            <div class="foot2">
+              <h3>Follow Us</h3>
+              <a href=""><img src="https://i.pinimg.com/736x/99/26/4d/99264d4441b917087b8dc7ee46c10ba1.jpg" height="40px"></a>
+    <a href=""><img src="https://e7.pngegg.com/pngimages/208/385/png-clipart-whatsapp-computer-icons-android-login-button-text-trademark.png" height="40px"></a>
+    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMub8_isTRV0HQaKhS6lVBJtFalX-SWN-0Ww&s" height="40px"></a>
+
+
+            </div>
+
+
+
+          </div>
+          <center><p style="font-size: 20px;">All rights reserved under @tastebites.com</p></center>
+        </section>
+      </footer>
+
+</body>
+</html>

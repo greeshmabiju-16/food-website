@@ -1,0 +1,173 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Gupter", serif;
+}
+header{
+   position: sticky;
+   top: 0px;
+   z-index: 1; 
+   
+}
+
+
+
+header button {
+    position: absolute;
+    right: 10px; /* Position button in the corner */
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+header button i {
+    margin-left: 5px;
+}
+
+/* #navbar1{
+    position: sticky;
+} */
+
+.custom-navbar {
+    height: 100px; 
+    padding: 20px 0; 
+}
+
+.custom-navbar .navbar-brand, 
+.custom-navbar .nav-link, 
+.custom-navbar .btn {
+    line-height: 5px; 
+}
+
+.navbar-brand{
+    font-family: "Dancing Script", cursive;
+}
+
+.nav-item {
+    margin-left: 50px; 
+}
+
+section h1{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.row{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.col{
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.his{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+
+}
+
+
+.his h2{
+    font-family: "Dancing Script", cursive;
+}
+
+.his h1{
+    font-family: "Dancing Script", cursive;
+}
+
+
+.gal{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+.gal1 {
+    flex: 1;
+    margin: 5px;
+  }
+  
+.gal1 img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    max-height: 200px; 
+    border-radius: 8px; 
+  }
+
+
+  form {
+    background-color: #f9f9f9; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 500px; 
+
+  }
+  
+ 
+  
+  .map1 button {
+    background-color: #f00000; 
+    color: white; 
+    padding: 10px 20px; 
+    /* border: none;  */
+   
+    cursor: pointer; 
+    width: 100%; 
+  }
+  
+  button:hover {
+    background-color: #f36d6d;
+  }
+  
+
+.map{
+    padding-left:40px ;
+    padding-right:40px ;
+    /* width: 600px; */
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+footer{
+    background-color: #bb2525;
+    color: #f9f9f9;
+    height: 250px;
+    padding-top: 20px;
+    
+}
+
+.tbs{
+    display: flex;
+}
+
+.his2{
+    display: flex;
+}
+
+
+.foot{
+    display: flex;
+}
+
+.foot1 {
+    padding-left: 40px;
+    margin-right: 20px; 
+}
+
+.foot2 {
+    padding-right: 40px;
+    margin-left: 1000px; 
+    justify-content: end;
+}
